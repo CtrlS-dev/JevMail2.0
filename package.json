@@ -1,0 +1,27 @@
+{
+  "name": "jevmail2",
+  "version": "2.0.0",
+  "description": "Clasifica y archiva tu bandeja principal de Gmail con IA, con terminal web y cron en Vercel",
+  "private": true,
+  "type": "module",
+  "license": "MIT",
+  "author": "CtrlS-dev",
+  "keywords": ["gmail", "email", "clasificador", "ia", "vercel", "nextjs", "cron"],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CtrlS-dev/JevMail2.0.git"
+  },
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "get-gmail-token": "node --env-file=.env.local scripts/get-gmail-token.js"
+  },
+  "dependencies": {
+    "@typesafe-ai/sdk": "^0.6.0",
+    "googleapis": "^182.0.0",
+    "next": "^15.1.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  }
+}
